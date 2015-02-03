@@ -1,0 +1,930 @@
+/*
+    ==============================================
+    Browne Entertainment Arts and Media (B.E.A.M.)
+    Master Site Cascading Style Sheet(CSS)file
+    Version: 1.0
+    Date: May 25th, 2014
+    Author: Jerome Matthews
+    Contact: jerome_matthews@live.com
+    ==============================================
+*/
+
+
+
+/*
+-----------------------------------------------------
+ ::::Site Background, Container, and Html styles::::
+-----------------------------------------------------
+*/
+/*==================================================================================*/
+
+
+#site_container {
+    width: 1200px;
+    margin: auto;
+
+}
+
+/*
+------------------------------------------------------------------
+            ::::Site Full-Screen BackGround Image Styling ::::
+------------------------------------------------------------------
+*/
+
+
+
+
+@font-face{
+	font-family: century;
+	src: url(../fonts/gothic.ttf);
+}
+
+
+@font-face{
+	font-family: century-bold;
+	src: url(../fonts/gothicb.ttf);
+}
+
+body {
+
+	font-family: century;
+}
+/*NOTES:*/
+/* ............*/
+/*
+-moz-background-size: cover isn't supported beyond firefox 3.4
+foregoed using the html css3 method in favor of the .bg class method below the html
+method.
+.bg class method works in:
+Any version of good browsers: Safari / Chrome / Opera / Firefox
+IE 6: Borked - but probably fixable if you use some kind of fixed positioning shim
+IE 7/8: Mostly works, doesn't center at small sizes but fills screen fine
+IE 9: Works
+source for code snippet reference:
+http://css-tricks.com/perfect-full-page-background-image/
+*/
+/*==================================================================================*/
+
+
+
+
+
+
+/*
+----------------------------------
+  ::::Top navigation styles:::::
+----------------------------------
+*/
+/*====================================================================================*/
+.topnav {
+    position:absolute;
+    top: 10px;
+	left: 927px;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight:600;
+	width: 425px;
+	padding: 5px 10px;
+	background-color: rgba(255,255,255, 0.2);
+	border-radius: 35px;
+	-webkit-box-shadow: 0px 9px 0px -6px rgba(0,0,0,0.43);
+-moz-box-shadow: 0px 9px 0px -6px rgba(0,0,0,0.43);
+box-shadow: 0px 9px 0px -6px rgba(0,0,0,0.43);
+
+}
+.topnav li a{
+	padding: 10 10px;
+}
+
+
+.topnav li {
+    display: inline;
+}
+
+.topnav a{
+    color: #ADD8E6;
+    text-decoration: none;
+	margin-left: 10px;
+}
+
+.topnav a:hover{
+	color: #fff;
+	text-shadow: .9px .9px #000;
+}
+/*
+----------------------------------------------------
+/*Styles Specific to the index page Top Navigation:
+----------------------------------------------------
+*/
+
+
+
+
+
+/*NOTES:*/
+/* ............*/
+/*====================================================================================*/
+
+
+
+
+/*
+----------------------------------------
+  ::::Contact Information styles:::::
+----------------------------------------
+*/
+/*===================================================================================*/
+
+#contact {
+
+		position:relative;
+		width: 200px;
+        top: 10px;
+        left: 1100px;
+}
+
+#contact p {
+    color: #ADD8E6;
+    font-size: .8em;
+}
+
+.contact-style {
+     color: #ADD8E6;
+    font-size: 1em;
+}
+
+
+.small {
+    font-size: .9em;
+}
+/*NOTES:*/
+/* ............*/
+/*===================================================================================*/
+
+
+#circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 250px;
+    top: 150px;
+    left: -145px;
+    /*background-color: #013294;*/
+	background-color: rgba(255,255,255,0.3);
+    border: solid 1px #ffffff;
+}
+
+
+/*
+--------------------------------------------------------------------------------------------
+            ::::Main Site Navigation Styling, All Umbrella Brand Links::::
+:::1)BALANCE - 2)B.E.A.M. THEATRE ARTS COMPANY - 3)B.E.A.M. PERFORMING ARTS CENTER :::
+:::4)BROWNE BOULEVARD - 5)CHANNE PHOTOGRAPHY - 6)DANCE FACTORY - 7)INTERNATIONAL TALENT :::
+:::MANAGEMENT AND BOOKING AGENCY - 8)THE ALL STARS INITIATIVE - 9)THE PERFORMING ARTS:::
+                            :::ALL STARS OF JAMAICA :::
+-------------------------------------------------------------------------------------------
+*/
+/*==================================================================================*/
+
+/*NAV STYLING*/
+.main-nav {
+    font-size: .7em;
+
+}
+
+.main-nav a{
+text-decoration: none;
+    align-content: center;
+}
+/*---------------------------*/
+
+/*==========================*/
+/*BRAND: 1       [:BALANCE:]*/
+/*==========================*/
+#brand_1 {
+    position:absolute;
+    top: 110px;
+    left: -163px;
+    width: 350px;
+    text-align:center;
+	/*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(-90deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(-90deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(-90deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(-90deg);/* General Opera Software Browsers*/
+    transform: rotate(-90deg);/*Normal Transform Attribute */
+    /*---------------------------------------------*/
+
+}
+#brand_1 a{
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px #000;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+
+        /*BRAND 1 BALANCE JQUERY-UI CLASSES:*/
+        /*----------------------------------*/
+        .brand_1-highlight{
+            background-color: rgba(255,244,0,0.7);
+        }
+
+            .change-b-1{
+                color: rgba(255,244,0,1);
+                 /*text-shadow: 0px 1.2px #000000; */
+            }
+/*==================================================*/
+
+
+/*================================================*/
+/*BRAND: 2       [:B.E.A.M. THEATRE ARTS COMPANY:]*/
+/*================================================*/
+#brand_2 {
+    position:absolute;
+    top: 75px;
+    left: -65px;
+    width: 350px;
+    text-align:center;
+
+	/*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(-60deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(-60deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(-60deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(-60deg);/* General Opera Software Browsers*/
+    transform: rotate(-60deg);/*Normal Transform Attribute */
+    /*--------------------------------------------*/
+
+
+}
+
+#brand_2 a{
+    color:rgba(255,255,255,1);
+    text-shadow: 1px 1px #000;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+
+/*BRAND 2 [:B.E.A.M. THEATRE ARTS COMPANY:] JQUERY-UI CLASSES:*/
+/*------------------------------------------------------------*/
+            .brand_2-highlight{
+            background-color: rgba(75,219,241,0.7);
+        }
+
+            .change-b-2{
+                color: rgba(75,219,241,1);
+            }
+/*==================================================*/
+
+
+
+
+/*==================================================*/
+/*BRAND: 3       [:B.E.A.M. PERFORMING ARTS CENTER:]*/
+/*==================================================*/
+#brand_3 {
+    position:absolute;
+    top: 260px;
+    left: 59px;
+    width: 350px;
+    text-align:center;
+	/*Vendor Prefixes: Transform:*/
+	-moz-transform-origin:left top; /* Mozilla FireFox Browsers*/
+	-ms-transform-origin:left top; /*Microsoft Internet Explorer Browsers */
+	-webkit-transform-origin:left top; /* Safari and Google Chrome Browsers*/
+	-o-transform-origin:left top; /* General Opera Software Browsers*/
+	transform-origin: left top; /*Normal Transform Attribute*/
+    /*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(-5deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(-45deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(-45deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(-45deg);/* General Opera Software Browsers*/
+    transform: rotate(-45deg);/*Normal Transform Attribute */
+    /*---------------------------------------------*/
+
+}
+
+#brand_3 a{
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px #000;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+/*BRAND 3 [:B.E.A.M. PERFORMING ARTS CENTER:] JQUERY-UI CLASSES:*/
+/*--------------------------------------------------------------*/
+            .brand_3-highlight{
+            background-color: rgba(244,177,194,0.7);
+        }
+
+            .change-b-3{
+                color: rgba(244,177,194,1);
+            }
+
+/*For some reason in FireFox and IE the positioning of the
+ Performing Arts Center text is off. -- Also, The */
+/*==================================================*/
+
+
+
+
+/*===================================*/
+/*BRAND: 4       [:BROWNE BOULEVARD:]*/
+/*===================================*/
+#brand_4 {
+    position:absolute;
+    top: 240px;
+    left: 40px;
+    width: 350px;
+    text-align:center;
+	/*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(-15deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(-15deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(-15deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(-15deg);/* General Opera Software Browsers*/
+    transform: rotate(-15deg);/*Normal Transform Attribute */
+    /*---------------------------------------------*/
+
+}
+
+#brand_4 a{
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px #000;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+/*BRAND 4 [:BROWNE BOULEVARD:] JQUERY-UI CLASSES:*/
+/*-----------------------------------------------*/
+            .brand_4-highlight{
+            background-color: rgba(148,0,212,0.7);
+        }
+
+            .change-b-4{
+                color: rgba(148,0,212,1);
+            }
+/*==================================================*/
+
+
+
+
+/*=====================================*/
+/*BRAND: 5       [:CHANNE PHOTOGRAPHY:]*/
+/*=====================================*/
+#brand_5 {
+    position:absolute;
+    top: 325px;
+    left: 55px;
+    width: 350px;
+    /*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(0deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(0deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(0deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(0deg);/* General Opera Software Browsers*/
+    transform: rotate(0deg);/*Normal Transform Attribute */
+    /*---------------------------------------------*/
+        text-align: center;
+}
+
+#brand_5 a{
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px #000;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+/*BRAND 5 [:CHANNE PHOTOGRAPHY:] JQUERY-UI CLASSES:*/
+/*-------------------------------------------------*/
+            .brand_5-highlight{
+            background-color: rgba(255,255,255,0.3);
+       }
+     .change-b-5{
+        color: rgba(253,127,18,1);
+        /*text-shadow: 0px 1.2px #000000; */
+      }
+/*==================================================*/
+
+
+
+
+/*================================*/
+/*BRAND: 6       [:DANCE FACTORY:]*/
+/*================================*/
+#brand_6 {
+    position:absolute;
+    top: 410px;
+    left: 9px;
+	width: 350px;
+    text-align:center;
+    /*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(25deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(25deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(25deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(25deg);/* General Opera Software Browsers*/
+    transform: rotate(25deg);/*Normal Transform Attribute */
+    /*---------------------------------------------*/
+}
+
+#brand_6 a{
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px #000;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+
+/*BRAND 6 [:DANCE FACTORY:] JQUERY-UI CLASSES:*/
+/*--------------------------------------------*/
+        .brand_6-highlight {
+        background-color: rgba(255,255,255,0.3);
+       }
+
+       .change-b-6{
+        color: rgba(0,204,0,0.7);
+        /*text-shadow: 0px 1.2px #000000; */
+       }
+/*==================================================*/
+
+
+
+/*=====================================================================*/
+/*BRAND: 7       [:INTERNATIONAL TALENT MANAGEMENT AND BOOKING AGENCY:]*/
+/*=====================================================================*/
+#brand_7 {
+    position:absolute;
+    top: 480px;
+    left: -20px;
+	width: 350px;
+    text-align:center;
+    /*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(45deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(45deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(45deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(45deg);/* General Opera Software Browsers*/
+    transform: rotate(45deg);/*Normal Transform Attribute */
+    /*---------------------------------------------*/
+}
+
+#brand_7 a{
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px #000;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+/*BRAND 7 [:INTERNATIONAL TALENT MANAGEMENT AND BOOKING AGENCY:] JQUERY-UI CLASSES:*/
+/*---------------------------------------------------------------------------------*/
+            .brand_7-highlight{
+            background-color: rgba(255,255,255,0.3);
+        }
+
+            .change-b-7{
+                color: rgba(50,17,122,1);
+            }
+/*==================================================*/
+
+
+
+
+/*===========================================*/
+/*BRAND: 8       [:THE ALL STARS INITIATIVE:]*/
+/*===========================================*/
+#brand_8 {
+    position:absolute;
+    top: 500px;
+    left: -90px;
+	width: 350px;
+    text-align:center;
+    /*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(60deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(60deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(60deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(60deg);/* General Opera Software Browsers*/
+    transform: rotate(60deg);/*Normal Transform Attribute */
+    /*---------------------------------------------*/
+}
+
+#brand_8 a{
+    color: rgba(255,255,255,1);
+    /*text-shadow: 1px 1px #000 ;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+/*BRAND 8 [:THE ALL STARS INITIATIVE:] JQUERY-UI CLASSES:*/
+/*-------------------------------------------------------*/
+          .brand_8-highlight{
+            background-color: rgba(255,255,255,0.7);
+        }
+
+            .change-b-8{
+                color: #222;
+            }
+/*==================================================*/
+
+
+
+
+
+/*===========================================================*/
+/*BRAND: 9       [:THE PERFORMING ARTS ALL STARS OF JAMAICA:]*/
+/*===========================================================*/
+#brand_9 {
+    position:absolute;
+    top: 516px;
+    left: -157px;
+	width: 350px;
+    text-align: center;
+    /*Vendor Prefixes: Transform: Rotation Browsers*/
+    -moz-transform: rotate(89deg);/* Mozilla FireFox Browsers*/
+    -ms-transform: rotate(89deg);/* Microsoft Internet Explorer Browsers*/
+    -webkit-transform: rotate(89deg);/* Safari and Google Chrome Browsers*/
+    -o-transform: rotate(89deg);/* General Opera Software Browsers*/
+    transform: rotate(89deg);/*Normal Transform Attribute */
+    /*---------------------------------------------*/
+}
+
+#brand_9 a{
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px #000;
+    /* first value: x-offset, second value: y-offset,
+    third value: blur amount, fourth value: color*/
+}
+/*BRAND 9 [:THE PERFORMING ARTS ALL STARS OF JAMAICA:] JQUERY-UI CLASSES:*/
+/*-----------------------------------------------------------------------*/
+            .brand_9-highlight{
+            background-color: rgba(163,10,12,0.7);
+        }
+
+            .change-b-9{
+                color: rgba(163,10,12,1);
+            }
+/*==================================================*/
+
+
+
+/*NOTES:*/
+/* ............*/
+/*===================================================================================*/
+
+
+
+
+/*
+-----------------------------------------------------
+            ::::Site Footer Styling ::::
+-----------------------------------------------------
+*/
+/*==================================================================================*/
+
+
+
+
+/*Section 1: Performance & Programs*/
+
+.foot-cat-sect-1 {
+	position:absolute;
+	float:left;
+	top: 219px;
+	left: 1040px;
+	color: #000;
+    text-shadow: .5px .5px #000;
+	font-size: 0.8em;
+	font-kerning: normal;
+	padding: 2.5px;
+	width: 250px;
+
+	text-align: center;
+}
+
+
+
+
+.foot-cat-sect-1 h5{
+    color: #a77521;
+    font-kerning:normal;
+	font-size: 1.29em;
+	text-transform: uppercase;
+	font-family: century-bold;
+
+}
+
+
+.foot-cat-sect-1 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot-cat-sect-1 a:hover {
+    color: #b0b0b0;
+}
+
+
+
+
+/*Section 2: Media & Arts*/
+
+.foot-cat-sect-2 {
+	position:absolute;
+	float:left;
+	top: 390px;
+	left: 1040px;
+	color: #fff;
+    text-shadow: .5px .5px #000;
+	font-size: .8em;
+	font-kerning: normal;
+	padding: 2.5px;
+	width: 250px;
+
+	text-align: center;
+}
+
+
+
+.foot-cat-sect-2 h5{
+    color: #a77521;
+    font-kerning:normal;
+	font-size: 1.29em;
+	text-transform: uppercase;
+	font-family: century-bold;
+
+
+}
+
+
+.foot-cat-sect-2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot-cat-sect-2 a:hover {
+    color: #b0b0b0;
+}
+
+
+
+
+
+
+/* Section 3: Charities & Initiatives*/
+
+.foot-cat-sect-3 {
+	position:absolute;
+	float:left;
+	top: 525px;
+	left: 1040px;
+	color: #fff;
+    text-shadow: .5px .5px #000;
+	font-size: .8em;
+	font-kerning: normal;
+	padding: 2.5px;
+
+	width: 250px;
+	text-align: center;
+}
+
+
+
+.foot-cat-sect-3 h5{
+	color: #a77521;
+    font-kerning:normal;
+	font-size: 1.29em;
+	text-transform: uppercase;
+	font-family: century-bold;
+
+
+}
+
+
+.foot-cat-sect-3 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot-cat-sect-3 a:hover {
+    color: #b0b0b0;
+}
+
+/*NOTES:*/
+/* ............*/
+/*===================================================================================*/
+
+
+
+
+
+
+
+
+/*
+-----------------------------------------------------
+            ::::Site Social Media Styling ::::
+-----------------------------------------------------
+*/
+/*==================================================================================*/
+
+#socialmedia {
+    position:absolute;
+    float:left;
+    top: 206px;
+    left:1070px;
+
+}
+
+#socialmedia li a:hover{
+    color: rgba(242,188,14,0.5);
+    /*Add some Jquery to style/animate the links.*/
+}
+
+#socialmedia li{
+    display: inline;
+    padding: 10px;
+
+
+}
+
+/*NOTES:*/
+/* ............*/
+/*===================================================================================*/
+#beam_brand_img {
+    position:absolute;
+    float:left;
+    top: 240px;
+    left: -29px;
+
+}
+
+
+
+/*
+--------------------------------------------------------------------------------------------
+            :::: Second Page - Our Story page Styling::::
+-------------------------------------------------------------------------------------------
+*/
+/*==================================================================================*/
+
+
+
+#pageCopy {
+	margin: auto;
+	padding: 0 10px;
+	align-content: center;
+	color: rgba(000,000,000,1);
+}
+
+.sectionCopy {
+	position:relative;
+	margin:auto;
+	top: 90px;
+	width: 50%;
+	background-color: rgba(234,234,235,0.3);
+	border: solid 2px fff;
+
+}
+
+/*
+-----------------------------------------------------
+ ::::OURSTORY:::::
+:::::PAGE HEADER STYLES::::
+-----------------------------------------------------
+*/
+/*==================================================================================*/
+#headCopy {
+	padding: 20px;
+	margin-top: 60px;
+	font-kerning:auto;
+}
+
+
+#contact-story p{
+	color: #ADD8E6;
+	font-size: .8em;
+}
+
+.fancy-line {
+	position: relative;
+	width: 100%;
+	height: 15px;
+	background-image: url(../img/cream_pixels.png);
+	background-repeat: repeat-x repeat-y;
+}
+
+#story-body {
+	background-image: url(../img/cream_pixels.png);
+	background-repeat: repeat-x repeat-y;
+}
+/*NOTES:*/
+/* ............*/
+/*==================================================================================*/
+
+
+
+
+/*
+-----------------------------------------------------
+ ::::OURSTORY:::::
+:::::PAGE BODY STYLES::::
+-----------------------------------------------------
+*/
+/*==================================================================================*/
+
+#contact-story {
+	width: 200px;
+        float:left;
+        position:relative;
+        top: 10px;
+        right: -1090px;
+}
+
+#BodyText {
+	position:absolute;
+	top: 90px;
+	left: 200px;
+	padding: 5px;
+	margin: 0px;
+	width: 900px;
+	font-size: 21px;
+}
+
+#BodyText h1 {
+	position: relative;
+	font-size: 55px;
+	align-content: center;
+	color: #000000;
+}
+
+#BodyText h2 {
+	font-size: 45px;
+	align-content: center;
+	color: #000000;
+}
+
+
+#BodyText h4, h5{
+ color: #000000;
+}
+
+
+#BodyText h3 {
+	color: #054cdb;
+}
+
+
+#lead-sentence {
+	text-align: center;
+}
+
+#hc-logo {
+	float:left;
+	position:absolute;
+	top: -130px;
+	left: 225px;
+	z-index: -1;
+}
+
+
+
+
+#innerCopy {
+	position:relative;
+	text-align: center;
+
+}
+
+#storyfooter{
+	margin: auto;
+	position: relative;
+	top: 1100px;
+	width: 100%;
+	background-color: rgba(232, 207, 14, 0.74);
+}
+/*NOTES:*/
+/* ............*/
+/*==================================================================================*/
+
+
+
+
+
+
+.container {
+	background: url(../img/studio_bg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.contact-info {
+
+	margin-top: 220px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 40px;
+	text-align: center;
+	padding: 19px;
+	background-color: rgba(000,000,000,0.3);
+	color: rgba(255,255,255,1);
+	clear:right;
+}
+
+#beam-img {
+	float:right;
+	height: 290px;
+	position: absolute;
+	top: -70px;
+	left: 380px;
+
+}
+
+
